@@ -89,7 +89,7 @@ hydrogenMeshes.forEach((hydrogenMesh) => {
     .addVectors(carbonMesh.position, hydrogenMesh.position)
     .multiplyScalar(0.5);
   //creates a bond with cylinder geometry
-  const bondGeometry = new THREE.CylinderGeometry(0.7, 0.7, 10, 32);
+  const bondGeometry = new THREE.CylinderGeometry(0.6, 0.6, 10, 32);
   // colors bond white with a light gray emissive
   const bondMaterial = new THREE.MeshStandardMaterial({
     color: 0xffffff,
